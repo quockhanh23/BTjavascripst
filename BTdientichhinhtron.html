@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input id="nhapvao" type="text">
+<button onclick="tinhToan()">Tính</button>
+<h2 id="res">Kết quả</h2>
+</body>
+</html>
+<script>
+    function tinhToan () {
+        let r = document.getElementById('nhapvao').value;
+        let s = r** 2 * 3.14;
+        document.getElementById('res').innerHTML = s;
+    }
+</script>

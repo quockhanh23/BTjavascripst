@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form>
+ <h2>Tính điểm trung bình</h2>
+        <p style="background: cornflowerblue ">Vật lý</p>
+        <input id="diemvatly" type="text">
+        <p style="background: yellow">Hóa học</p>
+        <input id="diemhoahoc" type="text">
+        <p style="background: green";>Sinh học</p>
+        <input id="diemsinhhoc" type="text">
+    <br>
+    <br>
+    <button style="background: aqua" onclick="diemtrungbinh()">Tổng 3 môn và điểm trung bình</button>
+</form>
+<script>
+    function diemtrungbinh() {
+       let diemvatly = +document.getElementById('diemvatly').value;
+       let diemhoahoc = +document.getElementById('diemhoahoc').value;
+       let diemsinhhoc = +document.getElementById('diemsinhhoc').value;
+       let tong = diemvatly + diemhoahoc + diemsinhhoc;
+        alert (tong)
+        alert (tong/3)
+    }
+</script>
+</body>
+</html>

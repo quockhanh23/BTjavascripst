@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id="dauvao">
+<button type="button" onclick="acb()">Tính</button>
+<h2 id="res">Kết quả</h2>
+</body>
+</html>
+<script>
+    function acb() {
+        let r = +document.getElementById('dauvao').value;
+        let p = 2 * 3.14 * r;
+        document.getElementById('res').innerHTML = p;
+    }
+</script>

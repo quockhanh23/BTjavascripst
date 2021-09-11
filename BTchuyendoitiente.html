@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form>
+    <table>
+        <tr>
+            <th>Amount</th>
+            <th>Formcurrency</th>
+            <th>Currency</th>
+            <th></th>
+        </tr>
+        <tr>
+            <td><input type="text" id="nhapvao"></td>
+            <td><select id="c1">
+                <option value="a">VND</option>
+                <option value="b">USD</option>
+            </select></td>
+            <td>
+                <select id="c2">
+                    <option value="a">VND</option>
+                    <option value="b">USD</option>
+                </select>
+            </td>
+            <td>
+                <button onclick="lamgido()" style="background: cornflowerblue; color: white">Convert</button>
+            </td>
+        </tr>
+    </table>
+</form>
+</body>
+</html>
+<script>
+    function lamgido() {
+        let giatridauvao = document.getElementById('nhapvao').value;
+        let luachon1 = document.getElementById('c1').value;
+        let luachon2 = document.getElementById('c2').value;
+        if (luachon1 == luachon2)
+            alert(giatridauvao)
+        if (luachon1 == "a" && luachon2 =='b')
+            alert(giatridauvao/24000)
+        if (luachon1 == "b" && luachon2 == 'a')
+            alert(giatridauvao*24000)
+    }
+</script>

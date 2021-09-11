@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form>
+    <input id="nhapvao1" type="text">
+    <input id="nhapvao2" type="text"> <br>
+    <button id="cong" onclick="tong()">Addtion(+)</button>
+    <button id="tru"  onclick="hieu()">Suptraction(-)</button>
+    <button id="nhan" onclick="tich()">Multiplication(x)</button>
+    <button id="chia" onclick="thuong()">Division(/)</button>
+    <h2 id="res">RESULT DIVISON</h2>
+</form>
+</body>
+</html>
+<script>
+    function tong() {
+        let giatrinhapvao1 = +document.getElementById("nhapvao1").value;
+        let giatrinhapvao2 = +document.getElementById("nhapvao2").value;
+        let tong = giatrinhapvao1 + giatrinhapvao2;
+        alert(tong)
+    }
+function hieu() {
+    let giatrinhapvao1 = document.getElementById("nhapvao1").value;
+    let giatrinhapvao2 = document.getElementById("nhapvao2").value;
+    let hieu = giatrinhapvao1 - giatrinhapvao2;
+    alert(hieu)
+}
+
+    function tich() {
+        let giatrinhapvao1 = document.getElementById("nhapvao1").value;
+        let giatrinhapvao2 = document.getElementById("nhapvao2").value;
+        let tich = giatrinhapvao1 * giatrinhapvao2;
+        alert(tich)
+    }
+    function thuong() {
+        let giatrinhapvao1 = document.getElementById("nhapvao1").value;
+        let giatrinhapvao2 = document.getElementById("nhapvao2").value;
+        let thuong = giatrinhapvao1 / giatrinhapvao2;
+        alert(thuong)
+    }
+</script>
